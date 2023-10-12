@@ -13,7 +13,7 @@
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border-bottom: 1px solid  #DBDADE;
+    border-bottom: 1px solid #DBDADE;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -77,12 +77,13 @@
     animation: moving .5s ease;
 }
 
-@media only screen and (max-width:1300px){
-    .tabs-div{
+@media only screen and (max-width:1300px) {
+    .tabs-div {
         overflow-x: auto !important;
     }
-    .tab{
-       
+
+    .tab {
+
         width: 1000px;
     }
 }
