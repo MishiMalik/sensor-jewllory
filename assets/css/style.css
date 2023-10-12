@@ -1,0 +1,65 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+    padding: 0px;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.theme {
+    background: #FAFAFA;
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#logo-image {
+    height: 100px;
+    width: auto;
+}
+
+.profile-pic {
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.project-heading {
+    color: #23272E;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Public Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    /* 91.667% */
+}
+
+.admin-dp {
+    position: relative;
+}
+
+.online {
+    height: 9px;
+    width: 9px;
+    background-color: #28C76F;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: -3px;
+}
+

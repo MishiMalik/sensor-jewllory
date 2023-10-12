@@ -1,0 +1,88 @@
+@keyframes moving {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid  #DBDADE;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 15px;
+    transition: 0.3s;
+
+    color: #8B909A;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Light/Basic Typography/Paragraph */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 146.667% */
+    border-bottom: 2px solid transparent;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #23272E;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Light/Basic Typography/Paragraph */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    border-bottom: 2px solid black;
+    /* 146.667% */
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #23272E;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Light/Basic Typography/Paragraph */
+    font-family: Public Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    border-bottom: 2px solid black;
+    /* 146.667% */
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: moving .5s ease;
+}
+
+@media only screen and (max-width:1300px){
+    .tabs-div{
+        overflow-x: auto !important;
+    }
+    .tab{
+       
+        width: 1000px;
+    }
+}
