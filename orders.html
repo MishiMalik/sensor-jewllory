@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap5 -->
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/icons/icons/all.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-solid.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-regular.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-light.css">
+    <!-- table -->
+    <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css"-->
+    <!--evo calendar  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.3/evo-calendar/css/evo-calendar.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.5.1/css/dataTables.dateTime.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" id="theme-link" href="assets/css/style.css">
+    <link rel="stylesheet" id="theme-link" href="assets/css/tabs.css">
+    <link rel="stylesheet" id="theme-link" href="assets/css/table.css">
+
+
+    <title>Document</title>
+</head>
+
+<body class="theme">
+
+    <div class="layout has-sidebar fixed-sidebar d-flex" style="width: fit-content !important;">
+        <a id="btn-collapse" href="#" class="align-self-center header-option">
+
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3334 4.00001H8.66675" stroke="white" stroke-width="1.75" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M13.3333 8H7.33325" stroke="white" stroke-width="1.75" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M13.3334 12H8.66675" stroke="white" stroke-width="1.75" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M5.33341 5.33334L2.66675 8L5.33341 10.6667" stroke="white" stroke-width="1.75"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+        </a>
+        <!-- ---------------------Side bar-------------- -->
+        <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
+
+            <div class="sidebar-layout">
+                <!-- logo -->
+                <div class="sidebar-header d-flex justify-content-center" style="position: relative;">
+
+                    <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center" style="position: relative;">
+                        <img src="assets/images/logo.png" alt="" class="logo-lg" id="logo-image">
+                        <img src="assets/images/logo - Copy.png" alt="" class="img-fluid logo-sm">
+
+                    </div>
+                </div>
+           
+
+                <!--  menu -->
+                <div class="menu">
+                    <ul>
+                        <li class="menu-item sub-menu ">
+                            <a class="mt-4">
+                                <span class="menu-icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.4166 7.98418L12.528 4.18185C11.6454 3.49524 10.4094 3.49524 9.52684 4.18185L4.63734 7.98418C4.04188 8.44725 3.69374 9.15943 3.69409 9.91376V16.5138C3.69409 17.5263 4.5149 18.3471 5.52743 18.3471H16.5274C17.5399 18.3471 18.3608 17.5263 18.3608 16.5138V9.91376C18.3608 9.15935 18.0124 8.4471 17.4166 7.98418"
+                                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.6666 13.7499C12.6408 14.9718 9.35725 14.9718 7.33325 13.7499"
+                                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </span>
+                                <span class="menu-title">Swicth To</span>
+
+                            </a>
+                            <div class="sub-menu-list">
+                                <ul>
+                                    <li class="menu-item">
+                                        <a href="invoice-list.html">
+                                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Germany</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="add-invoice.html">
+                                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Swizerland</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item pb-2  menu-heading-div mb-0 mt-3">
+                    <span class="ps-4 ls-3 menu-heading mb-0 text-primary">Main Menu</span>
+                </div>
+                <div class="sidebar-content">
+                    <nav class="menu open-current-submenu">
+
+                        <ul>
+
+                            <li class="menu-item ">
+                                <a href="index.html">
+                                    <span class="menu-icon">
+                                        <!-- <i class="bi bi-house"></i> -->
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.4166 7.98418L12.528 4.18185C11.6454 3.49524 10.4094 3.49524 9.52684 4.18185L4.63734 7.98418C4.04188 8.44725 3.69374 9.15943 3.69409 9.91376V16.5138C3.69409 17.5263 4.5149 18.3471 5.52743 18.3471H16.5274C17.5399 18.3471 18.3608 17.5263 18.3608 16.5138V9.91376C18.3608 9.15935 18.0124 8.4471 17.4166 7.98418"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14.6666 13.7499C12.6408 14.9718 9.35725 14.9718 7.33325 13.7499"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Dashboard </span>
+                                </a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="products.html">
+                                    <span class="menu-icon">
+                                        <!-- <i class="bi bi-house"></i> -->
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.4166 7.98418L12.528 4.18185C11.6454 3.49524 10.4094 3.49524 9.52684 4.18185L4.63734 7.98418C4.04188 8.44725 3.69374 9.15943 3.69409 9.91376V16.5138C3.69409 17.5263 4.5149 18.3471 5.52743 18.3471H16.5274C17.5399 18.3471 18.3608 17.5263 18.3608 16.5138V9.91376C18.3608 9.15935 18.0124 8.4471 17.4166 7.98418"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14.6666 13.7499C12.6408 14.9718 9.35725 14.9718 7.33325 13.7499"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Products</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="orders.html" class="active-menu">
+                                    <span class="menu-icon">
+                                        <!-- <i class="bi bi-cart3"></i> -->
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="5.50008" cy="17.4167" rx="1.83333" ry="1.83333"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <ellipse cx="5.50008" cy="17.4167" rx="1.83333" ry="1.83333"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <ellipse cx="15.5833" cy="17.4167" rx="1.83333" ry="1.83333"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <ellipse cx="15.5833" cy="17.4167" rx="1.83333" ry="1.83333"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M15.5834 15.5833H5.50008V2.75H3.66675" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M15.5834 15.5833H5.50008V2.75H3.66675" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5.5 4.58333L18.3333 5.5L17.4167 11.9167H5.5" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M5.5 4.58333L18.3333 5.5L17.4167 11.9167H5.5" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Orders </span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="swiz-orders.html" class="">
+                                    <span class="menu-icon">
+
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="8.70833" cy="8.70833" r="5.95833" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <circle cx="8.70833" cy="8.70833" r="5.95833" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <rect x="9.16675" y="9.16666" width="10.0833" height="10.0833" rx="2"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <rect x="9.16675" y="9.16666" width="10.0833" height="10.0833" rx="2"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Swiz Orders</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="shopify-orders.html" class="">
+                                    <span class="menu-icon">
+
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.8333 2.75V6.41667C12.8333 6.92293 13.2437 7.33333 13.7499 7.33333H17.4166"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M12.8333 2.75V6.41667C12.8333 6.92293 13.2437 7.33333 13.7499 7.33333H17.4166"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.5833 19.25H6.41659C5.40406 19.25 4.58325 18.4292 4.58325 17.4167V4.58333C4.58325 3.57081 5.40406 2.75 6.41659 2.75H12.8333L17.4166 7.33333V17.4167C17.4166 18.4292 16.5958 19.25 15.5833 19.25Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.5833 19.25H6.41659C5.40406 19.25 4.58325 18.4292 4.58325 17.4167V4.58333C4.58325 3.57081 5.40406 2.75 6.41659 2.75H12.8333L17.4166 7.33333V17.4167C17.4166 18.4292 16.5958 19.25 15.5833 19.25Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M8.25 8.25001H9.16667" stroke="#8B909A" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.25 8.25001H9.16667" stroke="#8B909A" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.25 11.9167H13.75" stroke="#8B909A" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.25 11.9167H13.75" stroke="#8B909A" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.25 15.5833H13.75" stroke="#8B909A" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.25 15.5833H13.75" stroke="#8B909A" stroke-width="1.75"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Shopify Orders</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="brand.html" class="">
+                                    <span class="menu-icon">
+
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48371L8.16484 7.56705L10.9937 1.83513L13.8225 7.56705L20.1475 8.48371L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48371L8.16484 7.56705L10.9937 1.83513L13.8225 7.56705L20.1475 8.48371L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Brand</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="log-in.html" class="">
+                                    <span class="menu-icon">
+
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48371L8.16484 7.56705L10.9937 1.83513L13.8225 7.56705L20.1475 8.48371L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48371L8.16484 7.56705L10.9937 1.83513L13.8225 7.56705L20.1475 8.48371L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Log Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="main-area w-100 mb-0">
+        <!-- ----------------Header--------------- -->
+        <header class="header-div  w-100">
+            <div class="header w-100 d-flex justify-content-between align-items-center">
+
+                <div class="d-flex align-items-center">
+                    <a id="btn-toggle" href="#" class="align-self-center ">
+
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3334 4.00001H8.66675" stroke="#8B909A" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.3333 8H7.33325" stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M13.3334 12H8.66675" stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5.33341 5.33334L2.66675 8L5.33341 10.6667" stroke="#8B909A" stroke-width="1.75"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                    <h2 class="project-heading mb-0 pb-0 ms-lg-0 ms-2">Orders</h2>
+                </div>
+
+
+                <div class="ms-auto d-flex">
+                    <!-- Notification -->
+                    <div class="notification-dropdown-div  align-self-center ">
+                        <button type="button" style="position: relative;">
+                            <div class="notifications">
+                                <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.2744 5.41667C11.2744 4.22005 12.2445 3.25 13.4411 3.25C14.6377 3.25 15.6077 4.22005 15.6077 5.41667C18.1429 6.61543 19.8096 9.11543 19.9411 11.9167V15.1667C20.1064 16.5325 20.9105 17.7387 22.1077 18.4167H4.77441C5.97162 17.7387 6.77575 16.5325 6.94108 15.1667V11.9167C7.07256 9.11543 8.73923 6.61543 11.2744 5.41667"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M11.2744 5.41667C11.2744 4.22005 12.2445 3.25 13.4411 3.25C14.6377 3.25 15.6077 4.22005 15.6077 5.41667C18.1429 6.61543 19.8096 9.11543 19.9411 11.9167V15.1667C20.1064 16.5325 20.9105 17.7387 22.1077 18.4167H4.77441C5.97162 17.7387 6.77575 16.5325 6.94108 15.1667V11.9167C7.07256 9.11543 8.73923 6.61543 11.2744 5.41667"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M10.1909 18.4167V19.5C10.1909 21.2949 11.646 22.75 13.4409 22.75C15.2358 22.75 16.6909 21.2949 16.6909 19.5V18.4167"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M10.1909 18.4167V19.5C10.1909 21.2949 11.646 22.75 13.4409 22.75C15.2358 22.75 16.6909 21.2949 16.6909 19.5V18.4167"
+                                        stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div class="number">4</div>
+                            </div>
+                        </button>
+                        <div class="notification-dropdown-inner">
+                            <ul class="notification-dropdown">
+                                <div class="notifications-header">
+                                    <h1 class="mb-0 pb-0">Notifications</h1>
+                                    <button>Clear All</button>
+                                </div>
+                                <li><a class=" " href="notifications.html"><i
+                                            class="bi bi-people-fill text-primary f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 ">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i class="bi bi-info-circle  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i
+                                            class="bi bi-person-fill text-primary  text-danger f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"> <i class="bi bi-chat-fill  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="notifications.html" class="text-center">
+                                        <div class="see-all w-100 text-center">
+                                            View All
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- admin Picture -->
+                    <div class=" align-self-center admin-dp">
+                        <img src="assets/images/dp.jpeg" alt="" class="profile-pic">
+                        <div class="online"></div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- -----------Main Contents----------- -->
+        <main class="content ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Tab links -->
+
+                        <div class="updates-table mb-4">
+                            <table border="0" cellspacing="5" cellpadding="5" class="filter-table mt-3  ms-auto">
+
+                                <tr class="filter-table-row">
+                                    <!-- <td><input type="text" id="min" name="min" placeholder="Date From "></td> -->
+                                    <!-- <td><input type="text" id="max" name="max" placeholder="Date To" class=""></td> -->
+                                    <td><input type="text" name="daterange" value="" placeholder="Filer by DateRange"
+                                            class="date-range-input" />
+                                    </td>
+                                    <td><button class="add-product-btn"> <i
+                                                class="bi bi-arrow-clockwise me-1"></i>Refresh</button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table id="example" class="table data-table-style nowrap data-table-style2 "
+                                style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Order id</th>
+                                        <th>Article EAN</th>
+                                        <th>customer</th>
+                                        <th>Created at</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <div class="overlay"></div>
+
+    </div>
+
+    <div id="overlay-all" class="overlay"></div>
+
+    <div id="overlay-sidebar"></div>
+
+
+    <!-- Jquery -->
+    <!-- <script src="assets/Js/jquery.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+
+    <!-- Cookies -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+        integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap5 -->
+    <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/Js/tabs.js"></script> -->
+    <script src="assets/Js/layout.js"></script>
+
+
+    <!-- <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/datetime/1.5.1/js/dataTables.dateTime.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="assets/Js/table.js"></script>
+
+</body>
+
+</html>

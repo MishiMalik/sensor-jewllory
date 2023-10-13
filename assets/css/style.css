@@ -16,7 +16,30 @@ body::-webkit-scrollbar-thumb {
     background-color: #aaa;
     border-radius: 10px;
 }
+/* ======================================================text */
+.text-primary{
+    color: #E79DAF !important;
+}
+/* =====================================================buttons */
+.add-product-btn{
+    margin-bottom: 20px;
+    border: none;
+    text-decoration: none;
+    background-color: #E79DAF;
+    border: none;
+    padding: 6px 5px 6px 5px !important;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+.add-product-btn:hover{
+    background-color: #ee7896;
+}
+.add-product-btn i{
+    font-size: 14px;
+}
 
+/* =======================================================home page */
 .theme {
     background: #FAFAFA;
     display: flex;
@@ -63,3 +86,15 @@ body::-webkit-scrollbar-thumb {
     right: -3px;
 }
 
+.zone-change{
+    padding: 0px 20px;
+    width: 100%;
+}
+.zone-change .dropdown .dropdown-toggle{
+    width: 100% !important;
+    text-align: left;
+    background-color: transparent;
+    color: #E79DAF;
+    border: 1px solid #F3F4F8 !important;
+    padding: 10px 30px;
+}

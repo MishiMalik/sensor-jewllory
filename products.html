@@ -64,6 +64,7 @@
         <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
 
             <div class="sidebar-layout">
+            <!-- logo -->
                 <div class="sidebar-header d-flex justify-content-center" style="position: relative;">
 
                     <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
@@ -74,16 +75,66 @@
 
                     </div>
                 </div>
-
-                <div class="menu-item py-2 mt-4 menu-heading-div mb-0">
-                    <span class="ps-4 ls-3 menu-heading mb-0">Main Menu</span>
+                <!-- switch zone -->
+                <!-- <div class="zone-change my-4">
+                    <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Swicth to
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Germany</a></li>
+                          <li><a class="dropdown-item" href="#">Swizerland</a></li>
+                        </ul>
+                      </div>
+                </div> -->
+               
+                <!-- menu -->
+                <div class="menu">
+                    <ul>
+                        <li class="menu-item sub-menu ">
+                            <a class="mt-4">
+                                <span class="menu-icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.4166 7.98418L12.528 4.18185C11.6454 3.49524 10.4094 3.49524 9.52684 4.18185L4.63734 7.98418C4.04188 8.44725 3.69374 9.15943 3.69409 9.91376V16.5138C3.69409 17.5263 4.5149 18.3471 5.52743 18.3471H16.5274C17.5399 18.3471 18.3608 17.5263 18.3608 16.5138V9.91376C18.3608 9.15935 18.0124 8.4471 17.4166 7.98418"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14.6666 13.7499C12.6408 14.9718 9.35725 14.9718 7.33325 13.7499"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+        
+                                </span>
+                                <span class="menu-title">Swicth To</span>
+        
+                            </a>
+                            <div class="sub-menu-list">
+                                <ul>
+                                    <li class="menu-item">
+                                        <a href="invoice-list.html">
+                                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Germany</span>
+                                        </a>
+                                    </li>
+        
+                                    <li class="menu-item">
+                                        <a href="add-invoice.html">
+                                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Swizerland</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-item pb-2  menu-heading-div mb-0 mt-3">
+                    <span class="ps-4 ls-3 menu-heading mb-0 text-primary">Main Menu</span>
                 </div>
                 <div class="sidebar-content">
                     <nav class="menu open-current-submenu">
 
                         <ul>
+                            
                             <li class="menu-item ">
-                                <a href="index.html" class="active-menu">
+                                <a href="index.html" >
                                     <span class="menu-icon">
                                         <!-- <i class="bi bi-house"></i> -->
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -99,8 +150,25 @@
                                     <span class="menu-title">Dashboard </span>
                                 </a>
                             </li>
+                            <li class="menu-item ">
+                                <a href="products.html" class="active-menu">
+                                    <span class="menu-icon">
+                                        <!-- <i class="bi bi-house"></i> -->
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.4166 7.98418L12.528 4.18185C11.6454 3.49524 10.4094 3.49524 9.52684 4.18185L4.63734 7.98418C4.04188 8.44725 3.69374 9.15943 3.69409 9.91376V16.5138C3.69409 17.5263 4.5149 18.3471 5.52743 18.3471H16.5274C17.5399 18.3471 18.3608 17.5263 18.3608 16.5138V9.91376C18.3608 9.15935 18.0124 8.4471 17.4166 7.98418"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14.6666 13.7499C12.6408 14.9718 9.35725 14.9718 7.33325 13.7499"
+                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Products</span>
+                                </a>
+                            </li>
                             <li class="menu-item">
-                                <a href="index.html" class="">
+                                <a href="orders.html" class="">
                                     <span class="menu-icon">
                                         <!-- <i class="bi bi-cart3"></i> -->
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -124,11 +192,11 @@
                                         </svg>
 
                                     </span>
-                                    <span class="menu-title">Order Management</span>
+                                    <span class="menu-title">Orders </span>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html" class="">
+                                <a href="swiz-orders.html" class="">
                                     <span class="menu-icon">
 
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -148,7 +216,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html" class="">
+                                <a href="shopify-orders.html" class="">
                                     <span class="menu-icon">
 
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -188,7 +256,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html" class="">
+                                <a href="brand.html" class="">
                                     <span class="menu-icon">
 
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -205,6 +273,26 @@
 
                                     </span>
                                     <span class="menu-title">Brand</span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="log-in.html" class="">
+                                    <span class="menu-icon">
+
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48371L8.16484 7.56705L10.9937 1.83513L13.8225 7.56705L20.1475 8.48371L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48371L8.16484 7.56705L10.9937 1.83513L13.8225 7.56705L20.1475 8.48371L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"
+                                                stroke="#8B909A" stroke-width="1.75" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="menu-title">Log Out</span>
                                 </a>
                             </li>
                         </ul>
@@ -321,20 +409,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Tab links -->
-<div class="tabs-div">
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'tab1')" id="defaultOpen">Products</button>
-        <button class="tablinks" onclick="openCity(event, 'tab2')">Sync Shopify Products</button>
-        <button class="tablinks" onclick="openCity(event, 'tab3')">Psuh Products SVZ</button>
-        <button class="tablinks" onclick="openCity(event, 'tab4')" >Check for Live</button>
-        <button class="tablinks" onclick="openCity(event, 'tab5')">Check for Errors</button>
-        <button class="tablinks" onclick="openCity(event, 'tab6')">Check Stock</button>
-        <button class="tablinks" onclick="openCity(event, 'tab7')">Add Products</button>
-      </div>
-</div>
-  
-  <!-- Tab content -->
-  <div id="tab1" class="tabcontent">
+
     <div class="updates-table mb-4">
         <table border="0" cellspacing="5" cellpadding="5" class="filter-table mt-3  ms-auto">
 
@@ -344,6 +419,7 @@
                 <td><input type="text" name="daterange" value="" placeholder="Filer by DateRange"
                         class="date-range-input" />
                 </td>
+                <td><button class="add-product-btn">  <i class="bi bi-plus-circle me-1"></i>Product</button></td>
             </tr>
             </tbody>
         </table>
@@ -759,31 +835,7 @@
             </tbody>
         </table>
     </div>
-  </div>
-  
-  <div id="tab2" class="tabcontent">
-    <h3>Sync Shopify Products</h3>
-  </div>
-  
-  <div id="tab3" class="tabcontent">
-    <h3>Psuh Products SVZ</h3>
-  </div>
 
-  <div id="tab4" class="tabcontent">
-    <h3>Check for Live</h3>
-  </div>
-
-  <div id="tab5" class="tabcontent">
-    <h3>Check for Errors</h3>
-  </div>
-
-  <div id="tab6" class="tabcontent">
-    <h3>Add Products</h3>
-  </div>
-
-  <div id="tab7" class="tabcontent">
-    <h3>Add Products</h3>
-  </div>
                     </div>
                     
                 </div>
@@ -810,7 +862,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bootstrap5 -->
     <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
-    <script src="assets/Js/tabs.js"></script>
+    <!-- <script src="assets/Js/tabs.js"></script> -->
     <script src="assets/Js/layout.js"></script>
 
 
@@ -828,136 +880,8 @@
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.html5.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script>
-
-        $(function () {
-            const dateRangeInput = $('input[name="daterange"]');
-            $('input[name="daterange"]').daterangepicker({
-                opens: 'left',
-                autoUpdateInput: false
-            }, function (start, end, label) {
-                minDate = start
-                maxDate = end
-                table.draw();
-                dateRangeInput.val(start.format('MM/DD/YYYY') + ' - ' + end.format('MM/DD/YYYY'));
-                dateRangeInput.trigger('change');
-            });
-            dateRangeInput.on('apply.daterangepicker', function (ev, picker) {
-                minDate = picker.startDate;
-                maxDate = picker.endDate;
-            });
-
-            dateRangeInput.on('cancel.daterangepicker', function () {
-      dateRangeInput.val('');
-      minDate = null;
-      maxDate = null;
-      dateRangeInput.trigger('change');
-      table.search('').draw(); // Clear the table filter
-    });
-        });
-    </script>
-
-
-    <script>
-
-        function parseDate(dateString) {
-            if (typeof dateString !== 'string') {
-                throw new Error("Invalid input. Expected a date string.");
-            }
-
-            var parts = dateString.split("-");
-            if (parts.length !== 3) {
-                throw new Error("Invalid date format. Expected DD-MM-YYYY.");
-            }
-
-            var day = parseInt(parts[0], 10);
-            var month = parseInt(parts[1], 10) - 1; // Adjust for zero-based month (0-11)
-            var year = parseInt(parts[2], 10);
-
-            return new Date(year, month, day);
-        }
-
-
-
-        let minDate = maxDate = null;
-
-        // Custom filtering function which will search data in column four between two values
-        DataTable.ext.search.push(function (settings, data, dataIndex) {
-            let min = minDate;
-            let max = maxDate;
-
-            if (min !== null) {
-                min = new Date(min).setHours(0, 0, 0, 0)
-            }
-
-            if (max !== null) {
-                max = new Date(max).setHours(0, 0, 0, 0)
-            }
-
-            let date = data[3]
-            date = parseDate(date)
-            date = new Date(date);
-
-            if (
-                (min === null && max === null) ||
-                (min === null && date <= max) ||
-                (min <= date && max === null) ||
-                (min <= date && date <= max)
-            ) {
-                return true;
-            }
-            return false;
-        });
-
-        // // Create date inputs
-        // minDate = new DateTime('#min', {
-        //     format: 'MMMM Do YYYY'
-        // });
-        // maxDate = new DateTime('#max', {
-        //     format: 'MMMM Do YYYY'
-        // });
-
-        // Create date inputs with the format 'DD-MM-YYYY'
-        // minDate = new DateTime('#min', {
-        //     format: 'DD-MM-YYYY'
-        // });
-        // maxDate = new DateTime('#max', {
-        //     format: 'DD-MM-YYYY'
-        // });
-
-        // DataTables initialisation
-        let table = new DataTable('#example', {
-            language: {
-                searchPlaceholder: "Search by order Id"
-            }
-        });
-
-        // Refilter the table
-        // document.querySelectorAll('#min, #max').forEach((el) => {
-        //     el.addEventListener('change', () => table.draw());
-        // });
-
-    </script>
-    <script>
-        const searchInput = document.getElementById('searchInput');
-        const dataTable = document.getElementById('dataTable');
-        const rows = dataTable.getElementsByTagName('tr');
-
-        searchInput.addEventListener('input', function () {
-            const searchTerm = searchInput.value.toLowerCase();
-
-            for (let i = 1; i < rows.length; i++) {
-                const idCell = rows[i].getElementsByTagName('td')[1];
-                const idText = idCell.textContent || idCell.innerText;
-
-                if (idText.toLowerCase().includes(searchTerm)) {
-                    rows[i].style.display = '';
-                } else {
-                    rows[i].style.display = 'none';
-                }
-            }
-        });
-    </script>
+     <script src="assets/Js/table.js"></script>
+   /
 </body>
 
 </html>
