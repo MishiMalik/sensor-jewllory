@@ -38,7 +38,47 @@ body::-webkit-scrollbar-thumb {
 .add-product-btn i{
     font-size: 14px;
 }
-
+.sync-btn{
+    margin-bottom: 20px;
+    border: none;
+    text-decoration: none;
+    background-color: #E79DAF;
+    border: none;
+    padding: 6px 6px 6px 6px !important;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+.blue-btn{
+    background-color: #0c3264;
+}
+.blue-btn:hover{
+    background-color:#043b85 ;
+}
+.gray-btn{
+    background-color: #6c757d;
+}
+.gray-btn:hover{
+    background-color:#5e6061;
+}
+.green-btn{
+    background-color: #28a745;
+}
+.green-btn:hover{
+    background-color: #06b42e;
+}
+.red-btn{
+    background-color: #dc3545;
+}
+.red-btn:hover{
+    background-color: #b40617;
+}
+.light-blue-btn{
+    background-color: #007bff;
+}
+.light-blue-btn:hover{
+    background-color: #0763c5;
+}
 /* =======================================================home page */
 .theme {
     background: #FAFAFA;
@@ -106,9 +146,15 @@ body::-webkit-scrollbar-thumb {
     color: white;
     line-height: 10px;
 }
+
 @media only screen and (max-width:768px){
     .add-product-btn{
         width: 100%;
         margin-bottom: 10px;
+    }
+    .sync-btn
+    {
+        width: 100%;
+        margin-bottom: 10px !important;
     }
 }

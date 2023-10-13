@@ -64,7 +64,7 @@
         <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
 
             <div class="sidebar-layout">
-            <!-- logo -->
+                <!-- logo -->
                 <div class="sidebar-header d-flex justify-content-center" style="position: relative;">
 
                     <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
@@ -87,7 +87,7 @@
                         </ul>
                       </div>
                 </div> -->
-               
+
                 <!-- menu -->
                 <div class="menu">
                     <ul>
@@ -95,17 +95,17 @@
                             <a class="mt-4">
                                 <span class="menu-icon">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M17.4166 7.98418L12.528 4.18185C11.6454 3.49524 10.4094 3.49524 9.52684 4.18185L4.63734 7.98418C4.04188 8.44725 3.69374 9.15943 3.69409 9.91376V16.5138C3.69409 17.5263 4.5149 18.3471 5.52743 18.3471H16.5274C17.5399 18.3471 18.3608 17.5263 18.3608 16.5138V9.91376C18.3608 9.15935 18.0124 8.4471 17.4166 7.98418"
-                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M14.6666 13.7499C12.6408 14.9718 9.35725 14.9718 7.33325 13.7499"
-                                                stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-        
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.4166 7.98418L12.528 4.18185C11.6454 3.49524 10.4094 3.49524 9.52684 4.18185L4.63734 7.98418C4.04188 8.44725 3.69374 9.15943 3.69409 9.91376V16.5138C3.69409 17.5263 4.5149 18.3471 5.52743 18.3471H16.5274C17.5399 18.3471 18.3608 17.5263 18.3608 16.5138V9.91376C18.3608 9.15935 18.0124 8.4471 17.4166 7.98418"
+                                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.6666 13.7499C12.6408 14.9718 9.35725 14.9718 7.33325 13.7499"
+                                            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
                                 </span>
                                 <span class="menu-title">Swicth To</span>
-        
+
                             </a>
                             <div class="sub-menu-list">
                                 <ul>
@@ -114,7 +114,7 @@
                                             <span class="menu-title">-&nbsp;&nbsp;&nbsp;Germany</span>
                                         </a>
                                     </li>
-        
+
                                     <li class="menu-item">
                                         <a href="add-invoice.html">
                                             <span class="menu-title">-&nbsp;&nbsp;&nbsp;Swizerland</span>
@@ -132,9 +132,9 @@
                     <nav class="menu open-current-submenu">
 
                         <ul>
-                            
+
                             <li class="menu-item ">
-                                <a href="index.html" >
+                                <a href="index.html">
                                     <span class="menu-icon">
                                         <!-- <i class="bi bi-house"></i> -->
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -322,10 +322,9 @@
                         </svg>
 
                     </a>
-                    <h2 class="project-heading mb-0 pb-0 ms-lg-0 ms-2 d-flex align-items-center">Products <span class="total-numer">20</span></h2>
+                    <h2 class="project-heading mb-0 pb-0 ms-lg-0 ms-2 d-flex align-items-center">Products <span
+                            class="total-numer">20</span></h2>
                 </div>
-
-
                 <div class="ms-auto d-flex">
                     <!-- Notification -->
                     <div class="notification-dropdown-div  align-self-center ">
@@ -408,439 +407,446 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <!-- Tab links -->
+                        <!-- sync buttons -->
+                        <div class="d-flex justify-content-end align-items-center mt-3 flex-sm-row flex-column">
+                            <button class="sync-btn ms-1 blue-btn">Sync Shopify Products</button>
+                            <button class="sync-btn ms-1 gray-btn">Psuh Products SVZ</button>
+                            <button class="sync-btn ms-1 green-btn">Check For Live</button>
+                            <button class="sync-btn ms-1 red-btn">Check For Errors</button>
+                            <button class="sync-btn ms-1 light-blue-btn">Check Stock</button>
+                        </div>
+                           <!-- search section -->
+                        <div class="updates-table mb-4">
+                            <table border="0" cellspacing="5" cellpadding="5" class="filter-table  ms-auto">
+                                <tr class="filter-table-row">
+                                    <td>
+                                        <div class="d-flex flex-md-row flex-column align-items-center">
+                                            <input type="text" name="daterange" value=""
+                                                placeholder="Filer by DateRange"
+                                                class="date-range-input order-md-1 order-2" />
+                                            <button class="add-product-btn ms-1  order-md-2 order-1"><i
+                                                    class="bi bi-plus-circle me-1"></i>Product</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table id="example" class="table data-table-style nowrap data-table-style2 "
+                                style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Order id</th>
+                                        <th>Article EAN</th>
+                                        <th>customer</th>
+                                        <th>Created at</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-    <div class="updates-table mb-4">
-        <table border="0" cellspacing="5" cellpadding="5" class="filter-table mt-3  ms-auto">
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
 
-            <tr class="filter-table-row">
-                <!-- <td><input type="text" id="min" name="min" placeholder="Date From "></td> -->
-                <!-- <td><input type="text" id="max" name="max" placeholder="Date To" class=""></td> -->
-                <td>
-                    <div class="d-flex flex-md-row flex-column align-items-center">
-                        <input type="text" name="daterange" value="" placeholder="Filer by DateRange"
-                        class="date-range-input order-md-1 order-2" />
-                        <button class="add-product-btn ms-1  order-md-2 order-1"><i class="bi bi-plus-circle me-1"></i>Product</button>
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            552456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>05-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9874</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            662456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>08-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#6548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            33456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            442456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>03-10-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="">
+                                        <td>#9548</td>
+                                        <td class="data-table-styel-description d-flex align-items-center">
+                                            772456657768
+                                        </td>
+                                        <td>Joseph Wheeler</td>
+                                        <td>02-11-2023</td>
+                                        <td>Price Pushed</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button class="stock-btn">Stock</button>
+                                                <div class="black-status ms-2"></div>
+                                                <div class="red-status ms-2"></div>
+                                                <div class="blue-status ms-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                     </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <table id="example" class="table data-table-style nowrap data-table-style2 " style="width:100%">
-            <thead>
-                <tr>
-                    <th>Order id</th>
-                    <th>Article EAN</th>
-                    <th>customer</th>
-                    <th>Created at</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
 
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        33456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    442456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>03-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    552456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>05-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9874</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        662456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>08-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        772456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-11-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        33456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    442456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>03-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    552456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>05-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9874</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        662456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>08-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    442456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>03-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    552456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>05-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9874</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        662456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>08-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        772456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-11-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        33456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    442456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>03-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    442456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>03-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    552456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>05-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9874</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        662456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>08-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        772456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-11-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#6548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        33456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                    442456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>03-10-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-
-
-                <tr class="">
-                    <td>#9548</td>
-                    <td class="data-table-styel-description d-flex align-items-center">
-                        772456657768
-                    </td>
-                    <td>Joseph Wheeler</td>
-                    <td>02-11-2023</td>
-                    <td>Price Pushed</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button class="stock-btn">Stock</button>
-                        <div class="black-status ms-2"></div>
-                        <div class="red-status ms-2"></div>
-                        <div class="blue-status ms-2"></div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-                    </div>
-                    
                 </div>
             </div>
         </main>
@@ -883,8 +889,8 @@
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.html5.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-     <script src="assets/Js/table.js"></script>
-   
+    <script src="assets/Js/table.js"></script>
+
 </body>
 
 </html>
