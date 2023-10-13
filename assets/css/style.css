@@ -146,7 +146,16 @@ body::-webkit-scrollbar-thumb {
     color: white;
     line-height: 10px;
 }
-
+.zone-select{
+background-color: transparent;
+border: none;
+}
+.zone-select:hover,
+.zone-select:active,
+.zone-select:focus{
+    outline: none;
+    box-shadow: none;
+}
 @media only screen and (max-width:768px){
     .add-product-btn{
         width: 100%;
