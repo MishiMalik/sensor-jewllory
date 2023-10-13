@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     background-color: #E79DAF;
     border: none;
-    padding: 6px 5px 6px 5px !important;
+    padding: 8px 5px 8px 5px !important;
     border-radius: 4px;
     color: white;
     font-size: 14px;
@@ -97,4 +97,18 @@ body::-webkit-scrollbar-thumb {
     color: #E79DAF;
     border: 1px solid #F3F4F8 !important;
     padding: 10px 30px;
+}
+.total-numer{
+    background-color: #E79DAF;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    line-height: 10px;
+}
+@media only screen and (max-width:768px){
+    .add-product-btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

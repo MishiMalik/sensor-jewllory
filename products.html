@@ -322,7 +322,7 @@
                         </svg>
 
                     </a>
-                    <h2 class="project-heading mb-0 pb-0 ms-lg-0 ms-2">Products</h2>
+                    <h2 class="project-heading mb-0 pb-0 ms-lg-0 ms-2 d-flex align-items-center">Products <span class="total-numer">20</span></h2>
                 </div>
 
 
@@ -416,10 +416,13 @@
             <tr class="filter-table-row">
                 <!-- <td><input type="text" id="min" name="min" placeholder="Date From "></td> -->
                 <!-- <td><input type="text" id="max" name="max" placeholder="Date To" class=""></td> -->
-                <td><input type="text" name="daterange" value="" placeholder="Filer by DateRange"
-                        class="date-range-input" />
+                <td>
+                    <div class="d-flex flex-md-row flex-column align-items-center">
+                        <input type="text" name="daterange" value="" placeholder="Filer by DateRange"
+                        class="date-range-input order-md-1 order-2" />
+                        <button class="add-product-btn ms-1  order-md-2 order-1"><i class="bi bi-plus-circle me-1"></i>Product</button>
+                    </div>
                 </td>
-                <td><button class="add-product-btn">  <i class="bi bi-plus-circle me-1"></i>Product</button></td>
             </tr>
             </tbody>
         </table>
@@ -881,7 +884,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
      <script src="assets/Js/table.js"></script>
-   /
+   
 </body>
 
 </html>
